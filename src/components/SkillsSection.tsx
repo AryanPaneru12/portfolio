@@ -3,7 +3,7 @@ import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { 
   LineChart, Clock, Database, Code, Cpu, 
-  BarChart, GitBranch, Award, Tool
+  BarChart, GitBranch, Award, Wrench
 } from "lucide-react";
 
 interface Skill {
@@ -60,7 +60,7 @@ const skills: Skill[] = [
   {
     id: 7,
     name: "Keras",
-    icon: <Tool className="h-6 w-6 skill-icon" />,
+    icon: <Wrench className="h-6 w-6 skill-icon" />,
     level: 4,
     category: 'tool'
   },
