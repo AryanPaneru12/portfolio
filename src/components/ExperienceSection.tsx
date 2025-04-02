@@ -98,8 +98,7 @@ const ExperienceSection: React.FC = () => {
           {experienceData.map((item) => (
             <div 
               key={item.id}
-              className="animate-fade-in opacity-0"
-              style={{ animationDelay: `${item.id * 0.3}s` }}
+              className="opacity-100" // Removed animation to ensure visibility
             >
               <Card className="border-l-4 border-navy-500 shadow-md hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
