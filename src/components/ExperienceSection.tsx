@@ -16,6 +16,21 @@ const experienceData: ExperienceItem[] = [
   {
     id: 1,
     company: "Nepal Clearing House Ltd. (NCHL)",
+    position: "Data Analyst & Machine Learning Intern",
+    duration: "Jun 2024 - Jul 2024",
+    location: "Kathmandu, Nepal",
+    responsibilities: [
+      "Developed a comprehensive data analytics and visualization system for QR transaction data",
+      "Built time series machine learning models (SARIMAX) using Sci-Kit Learn, TensorFlow, and Keras to forecast transaction trends",
+      "Implemented data management and analysis using PostgreSQL",
+      "Created interactive dashboards to visualize complex transaction data",
+      "Developed continuous real-time testing for predictive models",
+      "Integrated forecasting models with existing financial systems"
+    ]
+  },
+  {
+    id: 2,
+    company: "Nepal Clearing House Ltd. (NCHL)",
     position: "Machine Learning Intern",
     duration: "Jun 2023 - Aug 2023",
     location: "Kathmandu, Nepal",
@@ -28,7 +43,7 @@ const experienceData: ExperienceItem[] = [
     ]
   },
   {
-    id: 2,
+    id: 3,
     company: "FinTech Solutions Inc.",
     position: "Data Science Associate",
     duration: "Jan 2023 - May 2023",
@@ -42,7 +57,7 @@ const experienceData: ExperienceItem[] = [
     ]
   },
   {
-    id: 3,
+    id: 4,
     company: "Global Banking Technologies",
     position: "Frontend Development Intern",
     duration: "May 2022 - Aug 2022",
@@ -56,7 +71,7 @@ const experienceData: ExperienceItem[] = [
     ]
   },
   {
-    id: 4,
+    id: 5,
     company: "TechStart Innovation Lab",
     position: "Research Assistant",
     duration: "Sep 2021 - Dec 2021",
