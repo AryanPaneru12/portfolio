@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { 
@@ -11,6 +12,12 @@ interface Skill {
   icon: React.ReactNode;
   level: number; // 1-5
   category: 'technical' | 'tool';
+}
+
+interface Language {
+  id: number;
+  name: string;
+  level: number; // 1-5
 }
 
 const skills: Skill[] = [
@@ -86,13 +93,42 @@ const skills: Skill[] = [
   }
 ];
 
-const certifications = [
+const languages: Language[] = [
   {
     id: 1,
-    name: "E-Business Certification",
-    issuer: "VIT University",
-    year: "2022"
-  }
+    name: "Python",
+    level: 5,
+  },
+  {
+    id: 2,
+    name: "JavaScript",
+    level: 4,
+  },
+  {
+    id: 3,
+    name: "HTML",
+    level: 5,
+  },
+  {
+    id: 4,
+    name: "CSS",
+    level: 4,
+  },
+  {
+    id: 5,
+    name: "SQL",
+    level: 4,
+  },
+  {
+    id: 6,
+    name: "C",
+    level: 3,
+  },
+  {
+    id: 7,
+    name: "C++",
+    level: 3,
+  },
 ];
 
 const SkillBar: React.FC<{level: number}> = ({ level }) => {
@@ -162,23 +198,19 @@ const SkillsSection: React.FC = () => {
 
           <div>
             <h3 className="text-xl font-semibold mb-6 text-navy-500">
-              Certifications
+              Languages
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {certifications.map((cert) => (
-                <Card key={cert.id} className="skill-card">
+              {languages.map((language) => (
+                <Card key={language.id} className="skill-card">
                   <CardContent className="p-6">
-                    <div className="flex items-start">
-                      <div className="bg-fintech-100 p-2 rounded-lg mr-4">
-                        <Award className="h-6 w-6 text-fintech-500" />
+                    <div className="flex items-center mb-4">
+                      <div className="bg-gray-100 p-2 rounded-full mr-4">
+                        <Code className="h-6 w-6 skill-icon" />
                       </div>
-                      <div>
-                        <h4 className="font-medium">{cert.name}</h4>
-                        <p className="text-gray-500 text-sm">
-                          {cert.issuer} • {cert.year}
-                        </p>
-                      </div>
+                      <h4 className="font-medium">{language.name}</h4>
                     </div>
+                    <SkillBar level={language.level} />
                   </CardContent>
                 </Card>
               ))}
