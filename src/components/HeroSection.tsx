@@ -1,10 +1,25 @@
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Download, Mail, Code } from "lucide-react";
 import ThreeScene from "./ThreeScene";
 
 const HeroSection: React.FC = () => {
+  const [displayText, setDisplayText] = useState("");
+  const fullText = "Aryan Paneru";
+  const [index, setIndex] = useState(0);
+  
+  useEffect(() => {
+    if (index < fullText.length) {
+      const timeout = setTimeout(() => {
+        setDisplayText(prev => prev + fullText[index]);
+        setIndex(index + 1);
+      }, 150);
+      
+      return () => clearTimeout(timeout);
+    }
+  }, [index, fullText]);
+
   const downloadResume = () => {
     // This would typically link to an actual PDF file
     alert('Resume download functionality would be linked here');
@@ -19,7 +34,12 @@ const HeroSection: React.FC = () => {
       {/* Content container */}
       <div className="w-full md:w-1/2 px-6 py-12 md:py-0 z-10 animate-fade-in">
         <h2 className="text-fintech-500 font-medium tracking-wider mb-2">Hi there, I'm</h2>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Aryan Paneru</h1>
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+          {displayText}
+          <span className="inline-block w-1 h-8 md:h-10 lg:h-12 bg-fintech-500 ml-1 animate-pulse">
+            |
+          </span>
+        </h1>
         <p className="text-xl md:text-2xl font-heading text-navy-500 mb-6">
           Bridging FinTech Innovation & Data Science
         </p>
