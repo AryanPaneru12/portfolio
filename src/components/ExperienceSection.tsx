@@ -26,6 +26,48 @@ const experienceData: ExperienceItem[] = [
       "Created automated reporting systems for transaction monitoring",
       "Collaborated with cross-functional teams to implement ML-based anomaly detection"
     ]
+  },
+  {
+    id: 2,
+    company: "FinTech Solutions Inc.",
+    position: "Data Science Associate",
+    duration: "Jan 2023 - May 2023",
+    location: "Bangalore, India",
+    responsibilities: [
+      "Analyzed large-scale financial transaction data for pattern recognition",
+      "Built predictive models to identify potential fraud cases with 92% accuracy",
+      "Developed interactive data visualizations for quarterly business reviews",
+      "Collaborated with product teams to implement new features based on data insights",
+      "Optimized ETL pipelines for improved data processing efficiency"
+    ]
+  },
+  {
+    id: 3,
+    company: "Global Banking Technologies",
+    position: "Frontend Development Intern",
+    duration: "May 2022 - Aug 2022",
+    location: "Chennai, India",
+    responsibilities: [
+      "Developed responsive user interfaces for banking applications using React",
+      "Implemented data visualization components for financial analytics dashboards",
+      "Collaborated with UX designers to improve user experience for mobile banking",
+      "Participated in daily scrum meetings and sprint planning",
+      "Contributed to the development of reusable UI component library"
+    ]
+  },
+  {
+    id: 4,
+    company: "TechStart Innovation Lab",
+    position: "Research Assistant",
+    duration: "Sep 2021 - Dec 2021",
+    location: "Vellore, India",
+    responsibilities: [
+      "Conducted research on blockchain applications in financial services",
+      "Assisted in developing prototype DeFi applications for academic purposes",
+      "Prepared technical documentation and research papers",
+      "Presented findings at university research symposium",
+      "Collaborated with faculty on grant proposals for fintech innovation"
+    ]
   }
 ];
 
