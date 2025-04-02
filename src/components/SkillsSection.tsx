@@ -77,6 +77,20 @@ const skills: Skill[] = [
     icon: <Database className="h-6 w-6 skill-icon" />,
     level: 4,
     category: 'tool'
+  },
+  {
+    id: 10,
+    name: "Docker",
+    icon: <Clock className="h-6 w-6 skill-icon" />,
+    level: 4,
+    category: 'tool'
+  },
+  {
+    id: 11,
+    name: "React",
+    icon: <Code className="h-6 w-6 skill-icon" />,
+    level: 5,
+    category: 'tool'
   }
 ];
 
