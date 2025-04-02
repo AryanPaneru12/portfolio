@@ -3,7 +3,7 @@ import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { 
   LineChart, Clock, Database, Code, Cpu, 
-  BarChart, GitBranch, Award, Wrench
+  BarChart, GitBranch, Award, Wrench, Monitor
 } from "lucide-react";
 
 interface Skill {
@@ -31,7 +31,7 @@ const skills: Skill[] = [
   },
   {
     id: 3,
-    name: "Front-End Development",
+    name: "Full Stack Development",
     icon: <Code className="h-6 w-6 skill-icon" />,
     level: 4,
     category: 'technical'
@@ -52,20 +52,27 @@ const skills: Skill[] = [
   },
   {
     id: 6,
+    name: "Computer Vision",
+    icon: <Monitor className="h-6 w-6 skill-icon" />,
+    level: 4,
+    category: 'technical'
+  },
+  {
+    id: 7,
     name: "Sci-Kit Learn",
     icon: <LineChart className="h-6 w-6 skill-icon" />,
     level: 5,
     category: 'tool'
   },
   {
-    id: 7,
+    id: 8,
     name: "Keras",
     icon: <Wrench className="h-6 w-6 skill-icon" />,
     level: 4,
     category: 'tool'
   },
   {
-    id: 8,
+    id: 9,
     name: "PostgreSQL",
     icon: <Database className="h-6 w-6 skill-icon" />,
     level: 4,
