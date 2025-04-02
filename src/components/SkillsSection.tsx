@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { 
@@ -83,13 +82,6 @@ const skills: Skill[] = [
     name: "Docker",
     icon: <Clock className="h-6 w-6 skill-icon" />,
     level: 4,
-    category: 'tool'
-  },
-  {
-    id: 11,
-    name: "React",
-    icon: <Code className="h-6 w-6 skill-icon" />,
-    level: 5,
     category: 'tool'
   }
 ];
