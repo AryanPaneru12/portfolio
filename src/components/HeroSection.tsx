@@ -8,17 +8,34 @@ const HeroSection: React.FC = () => {
   const [displayText, setDisplayText] = useState("");
   const fullText = "Aryan Paneru";
   const [index, setIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [typingSpeed, setTypingSpeed] = useState(150);
   
   useEffect(() => {
-    if (index < fullText.length) {
-      const timeout = setTimeout(() => {
+    const timeout = setTimeout(() => {
+      if (!isDeleting && index < fullText.length) {
+        // Typing forward
         setDisplayText(prev => prev + fullText[index]);
         setIndex(index + 1);
-      }, 150);
-      
-      return () => clearTimeout(timeout);
-    }
-  }, [index, fullText]);
+        setTypingSpeed(150);
+      } else if (!isDeleting && index >= fullText.length) {
+        // Finished typing, pause before deleting
+        setIsDeleting(true);
+        setTypingSpeed(1000); // Pause before starting to delete
+      } else if (isDeleting && displayText.length > 0) {
+        // Deleting
+        setDisplayText(prev => prev.slice(0, -1));
+        setTypingSpeed(75); // Delete faster than typing
+      } else if (isDeleting && displayText.length === 0) {
+        // Finished deleting, start typing again
+        setIsDeleting(false);
+        setIndex(0);
+        setTypingSpeed(500); // Pause before starting to type again
+      }
+    }, typingSpeed);
+    
+    return () => clearTimeout(timeout);
+  }, [index, fullText, isDeleting, displayText.length, typingSpeed]);
 
   const downloadResume = () => {
     // This would typically link to an actual PDF file
