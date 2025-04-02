@@ -17,7 +17,7 @@ const educationData: EducationItem[] = [
     id: 1,
     institution: "Vellore Institute of Technology",
     degree: "B.Tech in Computer Science and Engineering",
-    duration: "2020 - 2024",
+    duration: "2022 - 2026",
     location: "Vellore, India",
     details: [
       "Minor in Finance",
@@ -28,18 +28,18 @@ const educationData: EducationItem[] = [
   {
     id: 2,
     institution: "Gems Institute",
-    degree: "Higher Secondary Education",
+    degree: "Cambridge International AS & A Levels",
     duration: "2018 - 2020",
     location: "Kathmandu, Nepal",
     details: [
       "Science Stream with Computer Science",
       "Percentage: 85%",
-      "School President"
+      "Clubs: music club, sport club, MUN club"
     ]
   },
   {
     id: 3,
-    institution: "Secondary Education Examination",
+    institution: "Gems School",
     degree: "SEE",
     duration: "2018",
     location: "Kathmandu, Nepal",
