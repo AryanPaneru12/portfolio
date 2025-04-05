@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Github, Linkedin } from "lucide-react";
 
@@ -18,7 +17,7 @@ const Footer: React.FC = () => {
           
           <div className="flex space-x-4">
             <a 
-              href="https://github.com/aryan-paneru" 
+              href="https://github.com/Aryanpaneru" 
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-fintech-500 transition-colors"
@@ -27,7 +26,7 @@ const Footer: React.FC = () => {
               <span className="sr-only">GitHub</span>
             </a>
             <a 
-              href="https://linkedin.com/in/aryan-paneru" 
+              href="https://www.linkedin.com/in/aryanpaneru/" 
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-fintech-500 transition-colors"

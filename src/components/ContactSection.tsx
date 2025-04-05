@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -48,7 +47,7 @@ const ContactSection: React.FC = () => {
                 </div>
                 <div>
                   <p className="text-sm text-gray-500">Email</p>
-                  <p className="font-medium">aryan.paneru@example.com</p>
+                  <p className="font-medium">aryanpaneu590@gmail.com</p>
                 </div>
               </div>
               
@@ -59,12 +58,12 @@ const ContactSection: React.FC = () => {
                 <div>
                   <p className="text-sm text-gray-500">LinkedIn</p>
                   <a 
-                    href="https://linkedin.com/in/aryan-paneru" 
+                    href="https://www.linkedin.com/in/aryanpaneru/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="font-medium text-navy-500 hover:underline"
                   >
-                    linkedin.com/in/aryan-paneru
+                    linkedin.com/in/aryanpaneru
                   </a>
                 </div>
               </div>
@@ -76,12 +75,12 @@ const ContactSection: React.FC = () => {
                 <div>
                   <p className="text-sm text-gray-500">GitHub</p>
                   <a 
-                    href="https://github.com/aryan-paneru" 
+                    href="https://github.com/Aryanpaneru" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="font-medium text-navy-500 hover:underline"
                   >
-                    github.com/aryan-paneru
+                    github.com/Aryanpaneru
                   </a>
                 </div>
               </div>

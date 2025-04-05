@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -24,9 +23,9 @@ const projects: Project[] = [
   },
   {
     id: 2,
-    title: "BlockChain DeFi Prototype",
-    description: "A decentralized finance prototype built on blockchain technology. Implemented smart contracts for automated lending and borrowing in a trustless environment.",
-    tags: ["Solidity", "Web3.js", "Ethereum", "Smart Contracts"],
+    title: "Fine Report: Financial Statement Generator",
+    description: "A comprehensive financial reporting application that processes trial balance data to generate profit and loss accounts, balance sheets, and key business ratios. Features interactive visualizations and automated calculations.",
+    tags: ["React", "JavaScript", "React Libraries", "Financial Analysis"],
     demoUrl: "#",
     githubUrl: "#"
   }
